@@ -31,7 +31,7 @@
 			}
 
 			#center #ivo{
-				height: 100%;
+				height: 130px;
 				margin-right: 20px;
 			}
 
@@ -43,10 +43,27 @@
 
 			#center h1 span{
 				font-size: small;
+				white-space: nowrap;
 			}
 
 			#center a{
 				color: #000;
+			}
+
+			@media (max-width: 600px) {
+				#center{
+					flex-wrap: wrap;
+					text-align: center;
+					height: auto;
+					padding-bottom: 80px;
+				}
+				#center #ivo{
+					margin: 20px auto;
+				}
+
+				#center div {
+					width: 100%;
+				}
 			}
 			
 		</style>
